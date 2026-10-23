@@ -1,3 +1,4 @@
-src/app/public/textures/**/*.jpg filter=lfs diff=lfs merge=lfs -text
-src/app/public/textures/**/*.png filter=lfs diff=lfs merge=lfs -text
-src/app/public/textures/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+# Tofu: keep the verified upstream texture bytes in Git so source archives are complete.
+src/app/public/textures/**/*.jpg -filter -diff -merge -text
+src/app/public/textures/**/*.png -filter -diff -merge -text
+src/app/public/textures/**/*.jpeg -filter -diff -merge -text

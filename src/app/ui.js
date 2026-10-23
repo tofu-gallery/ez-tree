@@ -1274,19 +1274,7 @@ export function setupUI(tree, environment, renderer, scene, camera, orbitControl
 
   exportTab.appendChild(exportModelsSection.element);
 
-  // Panel footer with course link
-  const footer = document.createElement('div');
-  footer.className = 'panel-footer';
-  footer.innerHTML = `
-    <p class="panel-footer-heading">Enjoying EZ-Tree? Try my other assets</p>
-    <a href="https://threejsroadmap.com/assets/threejs-water-pro?utm_source=eztree" target="_blank" class="panel-footer-link">
-      🌊 Three.js Water Pro
-    </a>
-    <a href="https://threejsroadmap.com/assets/threejs-sky-pro?utm_source=eztree" target="_blank" class="panel-footer-link">
-      ☁️ Three.js Sky Pro
-    </a>
-  `;
-  panel.appendChild(footer);
+  // Tofu: omit the paid-asset promotion footer in gallery copies.
 
   // Add panel to container
   container.appendChild(panel);
